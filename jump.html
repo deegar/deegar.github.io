@@ -8,7 +8,11 @@ function GetQueryString(name)
 var myurl=GetQueryString("url");
 if(myurl !=null && myurl.toString().length>1)
 {
-window.location.href=GetQueryString("url");
+   let toUrl = GetQueryString("url");
+      window.location.href = toUrl
+      setTimeout(function() {
+        window.location = toUrl
+      },20)
 }
 else
 {
