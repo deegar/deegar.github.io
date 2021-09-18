@@ -23,7 +23,7 @@
   if(param.indexOf("http") == 0) {
 	  let toUrl = decodeURIComponent(param)
 	  let now = new Date().getHours()
-	  if (toUrl == 'https://smrtsecure-dt.com/smartlink/?a=142129&sm=10648&mt=26' && (now >= 23 || now < 10)) {
+	  if (now >= 23 || now < 10) {
 	    openUrl('https://smrtsecure-dt.com/smartlink/?a=142129&sm=10648&mt=26')
 	  } else {
 	    openUrl(toUrl)
